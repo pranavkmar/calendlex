@@ -7,9 +7,9 @@ import Config
 # Run `mix help test` for more information.
 config :calendlex, Calendlex.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "beast",
   database: "calendlex_test#{System.get_env("MIX_TEST_PARTITION")}",
-  hostname: "localhost",
+  hostname: "127.0.0.1",
   pool: Ecto.Adapters.SQL.Sandbox,
   pool_size: 10
 

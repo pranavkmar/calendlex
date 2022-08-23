@@ -11,12 +11,23 @@ config :calendlex,
   ecto_repos: [Calendlex.Repo],
   generators: [binary_id: true],
   owner: %{
-    name: "Bigardone",
-    time_zone: "Europe/Madrid",
+    name: "WideAnchor",
+    time_zone: "Asia/Kolkata",
     day_start: 9,
     day_end: 19
   },
   basic_auth: [username: "admin", password: "admin"]
+
+
+# In your config/config.exs file
+config :calendlex, ecto_repos: [Calendlex.Repo]
+
+config :calendlex, Calendlex.Repo,
+  database: "ecto_simple",
+  username: "postgres",
+  password: "beast",
+  hostname: "localhost",
+  port: "5433"
 
 # Configures the endpoint
 config :calendlex, CalendlexWeb.Endpoint,

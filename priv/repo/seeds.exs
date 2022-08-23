@@ -7,13 +7,13 @@ event_types = [
   %{
     name: "15 minute meeting",
     description: "Short meeting call.",
-    duration: 15,
+    duration: 25,
     color: "blue"
   },
   %{
     name: "30 minute meeting",
     description: "Extended meeting call.",
-    duration: 30,
+    duration: 45,
     color: "pink"
   },
   %{
