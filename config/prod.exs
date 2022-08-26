@@ -10,9 +10,10 @@ import Config
 # which you should run after static files are built and
 # before starting your production server.
 config :calendlex, CalendlexWeb.Endpoint,
-  url: [scheme: "https", host: "calendlex.herokuapp.com", port: 443],
+  url: [scheme: "https", host: "peaceful-ravine-51542.herokuapp.com", port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
-  cache_static_manifest: "priv/static/cache_manifest.json"
+  cache_static_manifest: "priv/static/cache_manifest.json",
+  secret_key_base: System.get_env("SECRET_KEY_BASE")
 
 # Do not print debug messages in production
 config :logger, level: :info
