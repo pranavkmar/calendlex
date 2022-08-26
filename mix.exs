@@ -48,7 +48,8 @@ defmodule Calendlex.MixProject do
       {:plug_cowboy, "~> 2.5"},
       {:timex, "~> 3.7"},
       {:slugify, "~> 1.3"},
-      {:credo, "~> 1.5"}
+      {:credo, "~> 1.5"},
+      {:tapex, "~> 0.1.0", only: :test}
     ]
   end
 
