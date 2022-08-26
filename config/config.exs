@@ -23,10 +23,10 @@ config :calendlex,
 config :calendlex, ecto_repos: [Calendlex.Repo]
 
 config :calendlex, Calendlex.Repo,
-  database: "ecto_simple",
-  username: "postgres",
-  password: "beast",
-  hostname: "localhost",
+  database: "d9c0q57l6jn44a",
+  username: "xswyhfdrwmrhks",
+  password: "73e0bade1f9deae9693216fea6897cabb6fc36651dda27532abaab2efef67e06",
+  hostname: "ec2-34-227-135-211.compute-1.amazonaws.com",
   port: "5433"
 
 # Configures the endpoint
