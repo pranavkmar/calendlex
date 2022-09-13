@@ -27,7 +27,7 @@ config :calendlex, Calendlex.Repo,
   username: "postgres",
   password: "beast",
   hostname: "localhost",
-  port: "5433"
+  port: "5432"
 
 # Configures the endpoint
 config :calendlex, CalendlexWeb.Endpoint,
