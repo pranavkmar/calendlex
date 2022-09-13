@@ -12,6 +12,7 @@ defmodule CalendlexWeb.EventTypeLive do
           socket
           |> assign(event_type: event_type)
           |> assign(page_title: event_type.name)
+          |> assign(description: event_type.description)
 
         {:ok, socket, temporary_assigns: [time_slots: []]}
 
